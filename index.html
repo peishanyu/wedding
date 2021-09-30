@@ -1,0 +1,181 @@
+<html lang="zh-TW">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+
+    <title>Justin & Patty 我們結婚了</title>
+
+    <body>
+        <div id="wedding" class="outer">
+            <div id="header">
+                <div class="group">
+                    <div class="item"><a href="#info">關於婚宴</a></div>
+                    <div class="logo"><a href="index.html"><img src="images/logo_jp.png"/></a></div>
+                    <div class="item"><a href="#gallery">婚紗照片</a></div>    
+                </div>
+            </div>
+            <div id="main">
+                <div class="kv"></div>
+            </div>
+            <div id="info">
+                <div class="inner">
+                    <div class="left">
+                        <div class="photo-frame">
+                            <img src="images/img-photo.jpg"/>
+
+                            <div class="flower">
+                                <img class="max-w100" src="images/img-flower.png"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="center">
+                        <div class="title mt50 mb20"><img class="max-w100" src="images/img-invitation-title.png"/></div>
+                        <div class="info">
+
+                            <div class="title mb60"><img class="max-w100" src="images/title.svg"/></div>
+
+                            <div class="flex-center">
+                                <div class="mr50"><img class="max-w100" src="images/info-date.svg"/></div>
+                                <div><img class="max-w100" src="images/info-date2.svg"/></div>    
+                            </div>
+                            <div class="flex-center">
+                                <div class="mr50"><img class="max-w100 hide-m" src="images/info-empty.svg"/></div>
+                                <div class="sep-line"></div>    
+                            </div>
+                            <div class="flex-center">
+                                <div class="mr50"><img class="max-w100" src="images/info-location.svg"/></div>
+                                <div><img class="max-w100" src="images/info-location2.svg"/></div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="right">
+                        <img class="mt50 hotel" src="images/img-hotel.jpg"/>
+                    </div> 
+                </div>
+                <div id="clockdiv">
+                    <h1 id="headline">婚禮倒數: </h1>
+                    <div id="countdown">
+                        <ul>
+                        <li>days<span id="days"></span></li>
+                        <li>Hours<span id="hours"></span></li>
+                        <li>Minutes<span id="minutes"></span></li>
+                        <li>Seconds<span id="seconds"></span></li>
+                        </ul>
+                    </div>
+                    <div id="content" class="emoji">
+                        <span>Marriage is a life of sharing.</span>
+                    </div>
+                </div>
+            </div>
+            <div id="gallery">
+                <div class="group">
+                    <div class="item">
+                        <div><img class="gallery-image" src="images/gallery/04-43-533x800.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div><img class="gallery-image" src="images/gallery/05-46-533x800.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div><img class="gallery-image" src="images/gallery/06-42-533x800.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div><img class="gallery-image" src="images/gallery/07-43-533x800.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div><img class="gallery-image" src="images/gallery/08-44-533x800.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div><img class="gallery-image" src="images/gallery/09-46-533x800.jpg"></div>
+                    </div>
+                </div>
+                <div class="group hide-m">
+                    <div class="item">
+                        <div><img class="gallery-image" src="images/gallery/04-43-533x800.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div><img class="gallery-image" src="images/gallery/05-46-533x800.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div><img class="gallery-image" src="images/gallery/06-42-533x800.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div><img class="gallery-image" src="images/gallery/07-43-533x800.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div><img class="gallery-image" src="images/gallery/08-44-533x800.jpg"></div>
+                    </div>
+                    <div class="item">
+                        <div><img class="gallery-image" src="images/gallery/09-46-533x800.jpg"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="footer">
+                <div class="welcome container">
+                    <img class="max-w100" src="images/img-welcome.svg"/>
+                </div>
+                <div class="container flex-center">
+                    <div class="contact justin">
+                        <div class="name">Justin 俊佑</div>
+                        <div class="mobile flex-center">
+                            <!-- <span>&nbsp;|&nbsp;</span> -->
+                            <span>0982-566-541</span>
+                            <span><a href=""><img src="images/img-line.svg"/></a></span>
+                        </div>
+                    </div>
+                    <div class="footer-logo">
+                        <a href="#main"><img src="images/logo_jp.png"/></a>
+                    </div>
+                    <div class="contact patty">
+                        <div class="name">Patty 佩珊</div>
+                        <div class="mobile flex-center">
+                            <!-- <span>&nbsp;|&nbsp;</span> -->
+                            <span>0958-063-243</span>
+                            <span><a href=""><img src="images/img-line.svg"/></a></span>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="bg-path"></div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        (function () {
+        const second = 1000,
+                minute = second * 60,
+                hour = minute * 60,
+                day = hour * 24;
+
+        let birthday = "Nov 6, 2021 12:00:00",
+            countDown = new Date(birthday).getTime(),
+            x = setInterval(function() {    
+
+                let now = new Date().getTime(),
+                    distance = countDown - now;
+
+                document.getElementById("days").innerText = Math.floor(distance / (day)),
+                document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
+                document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
+                document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
+
+                //do something later when date is reached
+                if (distance < 0) {
+                let headline = document.getElementById("headline"),
+                    countdown = document.getElementById("countdown"),
+                    content = document.getElementById("content");
+
+                headline.innerText = "婚姻是一種生活的分享";
+                countdown.style.display = "none";
+                content.style.display = "block";
+
+                clearInterval(x);
+                }
+                //seconds
+            }, 0)
+        }());
+    </script>
+</html>
