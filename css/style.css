@@ -36,6 +36,7 @@ body {
 /* SPACE */
 #wedding .mr50 {margin-right:calc(var(--margin) * 10);}
 #wedding .mb20 {margin-bottom:calc(var(--margin) * 4);}
+#wedding .mb40 {margin-bottom:calc(var(--margin) * 8);}
 #wedding .mb60 {margin-bottom:calc(var(--margin) * 12);}
 #wedding .mt50 {margin-top:calc(var(--margin) * 10);}
 #wedding .mt100 {margin-top:calc(var(--margin) * 20);}
@@ -53,7 +54,7 @@ body {
     color:var(--text-color-lighter);
     border-color:var(--text-color-lighter);
 }
-#wedding #header .logo img {max-width:120px;margin:0 20px;}
+#wedding #header .logo img {max-width:100px;margin:0 20px;}
 
 @media (max-width:767px) {
     #wedding #header .logo img {max-width:80px;}
@@ -69,19 +70,22 @@ body {
     background: url(../images/bg_index.jpg) center center no-repeat;
     background-size:cover;
 }
-#wedding #main .kv {height:50vh;}
+/* #wedding #main .kv {
+    height:50vh;
+    background: url(../images/kv.png) top center no-repeat;
+} */
 
 #wedding #info {
     position: relative;
-    padding-top: 120px;
+    padding-top:102vh;
     padding-bottom:50px;
-    background: url(../images/bg_rectangle.svg) center right no-repeat;
+    background: url(../images/bg_rectangle.png) top center no-repeat;
     background-size: contain;
 }
-#wedding #info .inner {display:flex;justify-content:space-between;}
+#wedding #info .inner {position:relative;display:flex;justify-content:space-between;}
 
 #wedding #info .inner .left {width:25%;}
-#wedding #info .inner .center {width:35%;text-align:center;}
+#wedding #info .inner .center {width:35%;padding-top:12vh;text-align:center;}
 #wedding #info .inner .right {width:20%;}
 
 #wedding #info .inner .left .photo-frame {position: relative;}
@@ -142,13 +146,25 @@ body {
     #wedding .mb60 {margin-bottom: calc(var(--margin) * 5);}
     #wedding #clockdiv {right:5%;bottom:0%;}
 }
-@media (max-width:1024px) {
-    #wedding #info {padding-top:80px;padding-bottom:25px;}
+@media (max-width:1366px) {
+    #wedding #info {padding-top:55vh;}
+    #wedding #clockdiv {transform:scale(0.75);right:0;}
+    #wedding #clockdiv li {padding-bottom: 0;}
+}
+@media (max-width:1365px) {
+    #wedding #info {padding-top:102vh;}
+}
+@media (max-width:1200px) {
+    #wedding #info {
+        padding-top:85vh;padding-bottom:25px;background-size:115%;}
+    #wedding #info .inner .center {padding-top:1vh;}
     #wedding #clockdiv {transform:scale(0.75);right:0;}
     #wedding #clockdiv li {padding-bottom: 0;}
 }
 
 @media (max-width:768px) {
+    #wedding #info {padding-top:85vh;}
+    #wedding #info .inner .center {padding-top:12vh;}
     #wedding #clockdiv {position: unset;}
     #wedding #info {background-size:unset;padding-bottom: 0;}
     #wedding #info .inner {display: unset;}
@@ -157,7 +173,7 @@ body {
     #wedding #info .inner .right {width:60%;margin:auto;}
 }
 @media (max-width:767px) {
-    #wedding #info {padding-top:10px;}
+    #wedding #info {padding-top:68vh;background-size:360%;}
     #wedding #info .inner .center {margin-top:80px;}
     #wedding #info .inner .center .flex-center {display: unset;}
     #wedding #info .inner .center .flex-center > div {text-align: left;}
@@ -168,6 +184,12 @@ body {
     #wedding #info .inner .right .mt50 {margin-top:0;}
     #wedding #clockdiv {margin:25px 0;}
     #wedding #clockdiv h1 {margin-top:0;}
+}
+@media (max-width:480px) {
+    #wedding #info {
+        background-size:auto;
+        padding-top:230%;
+    }
 }
 
 /* GALLERY */
@@ -200,7 +222,7 @@ body {
     #wedding #gallery .group .item {width:33.333%;}
 }
 @media (max-width:768px) {
-    #wedding #gallery .group.hide-m {display:none;}
+    #wedding #gallery .group .item.hide-m {display:none;}
 }
 @media (max-width:767px) {
     #wedding #gallery {margin-top:0;}
@@ -208,14 +230,14 @@ body {
 }
 
 /* FOOTER */
-#wedding #footer {position: relative;}
+#wedding #footer {position:relative;}
 #wedding #footer .bg-path {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
     z-index: -1;
-    background:#c0d9d2;
+    background:#cfdcd2;
     -webkit-clip-path: polygon(0 70%, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 70%, 100% 0, 100% 100%, 0% 100%);
 }
