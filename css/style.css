@@ -43,7 +43,7 @@ body {
 
 /* HEADER */
 #wedding #header {position:fixed;width:100%;z-index:99;}
-#wedding #header .group {margin-top:10px;display:flex;align-items:center;justify-content:center;}
+#wedding #header .group {display:flex;align-items:center;justify-content:center;}
 #wedding #header .group .item {
     margin:0 20px;
     padding-bottom:5px;
@@ -190,6 +190,12 @@ body {
 }
 @media (max-width:640px) {
     #wedding #info {padding-top:520px;}
+}
+@media (max-width:375px) {
+    #wedding #info {padding-top:480px;}
+}
+@media (max-width:360px) {
+    #wedding #info {padding-top:400px;}
 }
 
 /* GALLERY */
