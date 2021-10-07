@@ -12,6 +12,7 @@ img {page-break-inside:avoid;}
     --margin:5px;
 }
 
+html {scroll-padding-top: 4rem;}
 
 body {
     margin: 0;
@@ -42,7 +43,12 @@ body {
 #wedding .mt100 {margin-top:calc(var(--margin) * 20);}
 
 /* HEADER */
-#wedding #header {position:fixed;width:100%;z-index:99;}
+#wedding #header {
+    position: fixed;
+    width:100%;
+    z-index:99;
+}
+
 #wedding #header .group {display:flex;align-items:center;justify-content:center;}
 #wedding #header .group .item {
     margin:0 20px;
@@ -56,8 +62,12 @@ body {
 }
 #wedding #header .logo img {max-width:100px;margin:0 20px;}
 
+
 @media (max-width:767px) {
-    #wedding #header {position:unset;}
+    #wedding #header {
+        position:sticky;
+        top:0;
+    }
     #wedding #header .logo img {max-width:80px;}
     #wedding #header .group .item {margin:0 10px;font-size:var(--font-size-base);}
 }
@@ -157,10 +167,23 @@ body {
 }
 @media (max-width:1200px) {
     #wedding #info {
-        padding-top:85vh;padding-bottom:25px;background-size:115%;}
+        padding-top:85vh;padding-bottom:25px;}
     #wedding #info .inner .center {padding-top:1vh;}
     #wedding #clockdiv {transform:scale(0.75);right:0;}
     #wedding #clockdiv li {padding-bottom: 0;}
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: landscape)  {
+    #wedding #info {padding-top:63vh;}
+    #wedding #info .inner .right {width: 25%;}
+}
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
+    #wedding #info {padding-top:50vh;}
+    #wedding #info .inner .right {width: 25%;}
+}
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)  {
+    #wedding #info {padding-top:80vh;}
 }
 
 @media (max-width:768px) {
