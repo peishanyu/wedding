@@ -180,11 +180,6 @@ body {
 @media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2)  and (orientation: portrait)  {
     #wedding #info {padding-top:50vh;}
     #wedding #info .inner .right {width: 25%;}
-    #wedding #clockdiv #countdown {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
 }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape)  {
@@ -200,6 +195,11 @@ body {
         padding-bottom:0;
     }
     #wedding #clockdiv {position: unset;}
+    #wedding #clockdiv #countdown {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
     #wedding #info .inner {display: unset;}
     #wedding #info .inner .left {display: none;}
     #wedding #info .inner .center {width:100%;padding:5%;}
