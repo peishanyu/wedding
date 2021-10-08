@@ -210,8 +210,8 @@ body {
     #wedding #info .inner .right .mt50 {margin-top:0;}
     #wedding #clockdiv {margin:25px 0;transform:scale(1);}
     #wedding #clockdiv h1 {font-size: calc(var(--font-size-base) * 1.25);}
-    #wedding #clockdiv li {font-size: calc(var(--font-size-base) * 0.5);}
-    #wedding #clockdiv li span {font-size:28px;}
+    #wedding #clockdiv li {font-size: calc(var(--font-size-base) * 0.75);}
+    #wedding #clockdiv li span {font-size:30px;}
 }
 @media (max-width:640px) {
     #wedding #info {padding-top:520px;}
