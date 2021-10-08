@@ -194,12 +194,7 @@ body {
         background-size: contain;
         padding-bottom:0;
     }
-    #wedding #clockdiv {position: unset;}
-    #wedding #clockdiv #countdown {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
+    #wedding #clockdiv {position:unset;}
     #wedding #info .inner {display: unset;}
     #wedding #info .inner .left {display: none;}
     #wedding #info .inner .center {width:100%;padding:5%;}
@@ -213,8 +208,10 @@ body {
     #wedding #info .inner .sep-line {margin:30px 0 20px;}
     #wedding #info .inner .right {width:80%;}
     #wedding #info .inner .right .mt50 {margin-top:0;}
-    #wedding #clockdiv {margin:25px 0;}
-    #wedding #clockdiv h1 {margin-top:0;}
+    #wedding #clockdiv {margin:25px 0;transform:scale(1);}
+    #wedding #clockdiv h1 {font-size: calc(var(--font-size-base) * 1.25);}
+    #wedding #clockdiv li {font-size: calc(var(--font-size-base) * 0.5);}
+    #wedding #clockdiv li span {font-size:28px;}
 }
 @media (max-width:640px) {
     #wedding #info {padding-top:520px;}
