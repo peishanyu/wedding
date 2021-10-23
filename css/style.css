@@ -12,7 +12,6 @@ img {page-break-inside:avoid;}
     --margin:5px;
 }
 
-html {scroll-padding-top: 4rem;}
 
 body {
     margin: 0;
@@ -43,12 +42,7 @@ body {
 #wedding .mt100 {margin-top:calc(var(--margin) * 20);}
 
 /* HEADER */
-#wedding #header {
-    position: fixed;
-    width:100%;
-    z-index:99;
-}
-
+#wedding #header {position:fixed;width:100%;z-index:99;}
 #wedding #header .group {display:flex;align-items:center;justify-content:center;}
 #wedding #header .group .item {
     margin:0 20px;
@@ -62,12 +56,8 @@ body {
 }
 #wedding #header .logo img {max-width:100px;margin:0 20px;}
 
-
 @media (max-width:767px) {
-    #wedding #header {
-        position:sticky;
-        top:0;
-    }
+    /* #wedding #header {position:unset;} */
     #wedding #header .logo img {max-width:80px;}
     #wedding #header .group .item {margin:0 10px;font-size:var(--font-size-base);}
 }
@@ -162,12 +152,10 @@ body {
     #wedding #clockdiv {transform:scale(0.75);right:0;}
     #wedding #clockdiv li {padding-bottom: 0;}
 }
-@media (max-width:1365px) {
-    #wedding #info {padding-top:102vh;}
-}
+
 @media (max-width:1200px) {
     #wedding #info {
-        padding-top:85vh;padding-bottom:25px;}
+        padding-top:85vh;padding-bottom:25px;background-size:115%;}
     #wedding #info .inner .center {padding-top:1vh;}
     #wedding #clockdiv {transform:scale(0.75);right:0;}
     #wedding #clockdiv li {padding-bottom: 0;}
@@ -186,6 +174,10 @@ body {
     #wedding #info {padding-top:80vh;}
 }
 
+@media (max-width:1365px) and (min-width:1201px) {
+    #wedding #info {padding-top:102vh;}
+}
+
 @media (max-width:768px) {
     body {background-color:#D2E0E0;}
     #wedding #info {
@@ -194,7 +186,7 @@ body {
         background-size: contain;
         padding-bottom:0;
     }
-    #wedding #clockdiv {position:unset;}
+    #wedding #clockdiv {position: unset;}
     #wedding #info .inner {display: unset;}
     #wedding #info .inner .left {display: none;}
     #wedding #info .inner .center {width:100%;padding:5%;}
@@ -208,10 +200,8 @@ body {
     #wedding #info .inner .sep-line {margin:30px 0 20px;}
     #wedding #info .inner .right {width:80%;}
     #wedding #info .inner .right .mt50 {margin-top:0;}
-    #wedding #clockdiv {margin:25px 0;transform:scale(1);}
-    #wedding #clockdiv h1 {font-size: calc(var(--font-size-base) * 1.25);}
-    #wedding #clockdiv li {font-size: calc(var(--font-size-base) * 0.75);}
-    #wedding #clockdiv li span {font-size:30px;}
+    #wedding #clockdiv {margin:25px 0;}
+    #wedding #clockdiv h1 {margin-top:0;}
 }
 @media (max-width:640px) {
     #wedding #info {padding-top:520px;}
@@ -276,6 +266,7 @@ body {
 #wedding #footer .container {justify-content: center;padding: calc(var(--margin) * 4);}
 #wedding #footer .welcome {margin:auto;text-align: center;}
 #wedding #footer .contact {margin: 10px 20px;text-align:center;}
+#wedding #footer .contact .name {font-weight:700;}
 #wedding #footer .contact .mobile {justify-content: center;}
 #wedding #footer .contact img {width:20px;margin:0 5px;}
 #wedding #footer .footer-logo img {max-width:80px;}
